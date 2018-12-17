@@ -1,0 +1,11 @@
+//_myTheme.scss
+$enable-rounded: false;
+$enable-shadows: true;
+$enable-gradients: false;
+$blue: #59abe5;
+$dark:#586068;
+$primary: $blue !default;
+$text-color: #424242;
+$theme-colors: (
+  "primary": $blue
+);

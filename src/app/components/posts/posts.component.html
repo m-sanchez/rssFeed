@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="col-md-12">
+    <ngx-spinner
+      bdColor="rgba(255,254,254,0.8)"
+      size="default"
+      color="#59abe5"
+      type="ball-clip-rotate"
+    >
+      <p style="font-size: 20px; color: #586068">Loading feeds...</p>
+    </ngx-spinner>
+    <div class="row">
+      <div class="col-md-12 text-right">
+        <br>
+        <button class="btn btn-primary" (click)="update()" *ngIf="posts.length">Update feeds</button>
+      </div>
+    </div>
+    <alert *ngIf="!posts.length" type="info">No feeds available</alert>
+    <div class="posts-wrapper" *ngIf="posts.length">
+      <orlo-single-post [post]="post" *ngFor="let post of viewPort" class="item"></orlo-single-post>
+    </div>
+  </div>
+</div>
+

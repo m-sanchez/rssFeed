@@ -1,0 +1,14 @@
+<div class="row">
+
+
+  <div class="col-md-3 h-100 bg-dark text-white py-3 d-flex align-items-center justify-content-center fixed-top"
+       [ngClass]="{'shown':feedShown}" id="left">
+    <button class="btn btn-primary toggle-feed" (click)="toggleFeed()" [ngClass]="{'shown':feedShown}">
+      <span class="fa" [ngClass]="{'fa-times':feedShown,'fa-bars':!feedShown}"></span>
+    </button>
+    <orlo-feeds></orlo-feeds>
+  </div>
+  <div class="col-lg-9  offset-lg-3 col-md-12 ">
+    <orlo-posts></orlo-posts>
+  </div>
+</div>

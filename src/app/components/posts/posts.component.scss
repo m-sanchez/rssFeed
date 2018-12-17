@@ -1,0 +1,30 @@
+:host {
+  & > .row {
+    min-height: 80vh;
+  }
+
+  .posts-wrapper {
+    margin-top: 1em;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(auto-fill, 30%);
+    grid-auto-rows: 20px;
+  }
+
+  .posts-wrapper orlo-single-post {
+    margin-bottom: 1em;
+    display: inline-block;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .posts-wrapper {
+      grid-template-columns: repeat(auto-fill, 45%);
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .posts-wrapper {
+      grid-template-columns: repeat(auto-fill, 90%);
+    }
+  }
+
+}

@@ -1,0 +1,21 @@
+{
+  "HOME": {
+    "HELLO": "Hola"
+  },
+  "TABLE": {
+    "SELECTALL": "Seleccionar Todo",
+    "DOWNLOADROWS": "Descargar tabla",
+    "NOELEMENTSMATCHINGFILTER": "No se encuentran elementos que concuerden con el filtro",
+    "PAGESIZE": "Mostrar",
+    "SHOWINGELEMENTS": "Mostrando elementos {{offset}} a {{limit}} de {{length}} ",
+    "PREVIOUS": "Anterior",
+    "NEXT": "Siguiente"
+  },
+  "DATA": {
+    "NAME": "Nombre",
+    "SURNAME": "Apellidos",
+    "ACTIVE": "Activo",
+    "NEXTPREPARATION": "Próximo preparación",
+    "FILTERBY": "Filtrar por"
+  }
+}

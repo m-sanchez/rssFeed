@@ -1,0 +1,21 @@
+{
+  "HOME": {
+    "HELLO": "Hello"
+  },
+  "TABLE": {
+    "SELECTALL": "Select All",
+    "DOWNLOADROWS": "Download rows",
+    "NOELEMENTSMATCHINGFILTER": "There are no elements matching the filters provided",
+    "PAGESIZE": "Page Size",
+    "SHOWINGELEMENTS": "Showing {{offset}} to {{limit}} of {{length}} items",
+    "PREVIOUS":"Previous",
+    "NEXT":"Next"
+  },
+  "DATA": {
+    "NAME": "Name",
+    "SURNAME": "Surname",
+    "ACTIVE": "Active",
+    "NEXTPREPARATION": "Next Preparation",
+    "FILTERBY": "Filter By"
+  }
+}

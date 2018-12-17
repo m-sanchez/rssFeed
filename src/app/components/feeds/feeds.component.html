@@ -1,0 +1,44 @@
+<orlo-alert></orlo-alert>
+<div class="row ">
+  <div class="col-md-12">
+    <h3>Content Generator</h3>
+    <alert *ngIf="!feeds.length" type="info" >Add some feeds</alert>
+
+    <div class="form-group" *ngIf="feeds.length">
+      <div class="row">
+        <div class="col-10 col-md-10">
+          <input type="text" [(ngModel)]="feedFilter" placeholder="Filter your feeds" class="form-control">
+        </div>
+        <div class="col-2 col-md-2 text-left">
+          <span class="fa fa-search "></span>
+        </div>
+      </div>
+    </div>
+    <div class="list-wrapper" *ngIf="feeds.length">
+      <ul>
+        <li *ngFor="let feed of feeds  | filterFeed:'name': feedFilter">
+          <img src="{{feed.image}}" alt="">
+          {{feed.name}}
+          <span class="fa fa-times-circle    float-right" aria-hidden="true" (click)="removeFeed(feed)"></span>
+        </li>
+      </ul>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-10 offset-md-1">
+        <form [formGroup]="feedForm">
+          <h4>Add a new feed</h4>
+          <div class="form-group">
+            <input type="text" formControlName="name" placeholder="Type  your feed name" class="form-control">
+          </div>
+          <div class="form-group">
+            <input type="text" formControlName="url" placeholder="Copy your RSS url" class="form-control">
+          </div>
+          <div class="form-group">
+            <button class="btn btn-primary btn-block" (click)="newFeed()" [disabled]="!feedForm.valid">Add feed</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

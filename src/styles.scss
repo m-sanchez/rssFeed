@@ -1,0 +1,47 @@
+/* You can add global styles to this file, and also import other style files */
+@import "scss/myTheme";
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  color: $text-color;
+  font-family: 'Lato', sans-serif;
+
+  .clickable {
+    cursor: pointer;
+  }
+
+  hr {
+    border-color: $gray-500;
+  }
+
+  input[type="text"] {
+    border-radius: 6em;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid $gray-500;
+    color: white;
+    font-style: italic;
+
+    &:focus {
+      background-color: rgba(0, 0, 0, 0.2);
+      color: white;
+    }
+  }
+
+  .btn {
+    border-radius: 6em;
+    height: 30px;
+    line-height: 15px;
+
+    &.btn-primary {
+      color: #212529;
+      color: white;
+
+      &:disabled {
+        color: white;
+      }
+    }
+  }
+
+}
+

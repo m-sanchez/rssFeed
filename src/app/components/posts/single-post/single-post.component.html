@@ -1,0 +1,14 @@
+<div class="card ">
+  <div class="card-header bg-dark text-white">
+    <i class="fa fa-external-link"></i> &nbsp;<a href="{{post.link}}">{{post.feedName}}</a>
+    <span class="float-right post-date">
+      {{post.pubDate | date:'MMM dd yyyy | hh:mm'}}
+    </span>
+  </div>
+  <div class="post-img" [ngStyle]="{ 'background-image': 'url(' + post.thumbnail + ')'}" *ngIf="!!post.thumbnail">
+  </div>
+    <div class="card-body">
+      <h5 class="card-title">{{post.title}}</h5>
+      <p class="card-text" [innerHTML]="post.description"></p>
+    </div>
+  </div>

@@ -1,0 +1,61 @@
+
+:host {
+  width: 100%;
+
+  .fa-search {
+    font-size: 1.4em;
+  }
+
+  orlo-alert {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    left: 1em;
+
+  }
+
+  h3 {
+    font-weight: lighter;
+    text-align: center;
+    padding: 1em;
+  }
+
+  .list-wrapper {
+    height: 30vh;
+    overflow: auto;
+    ul {
+      padding-left: 1.2em;
+
+      li {
+        list-style-type: circle;
+        font-style: italic;
+        margin-bottom: 0.6em;
+
+        .fa.fa-times-circle {
+          &:before {
+            cursor: pointer;
+            content: "\f00d";
+            font-size: 0.8em;
+            border-radius: 50%;
+            border: 1px solid #dc3545;
+            background-color: #dc3545;
+            color: white;
+            width: 21px;
+            height: 21px;
+            display: block;
+            padding: 1px 3px;
+            opacity: 0.8;
+          }
+
+          &:hover:before {
+            opacity: 1;
+          }
+
+          font-size: 1.3em
+        }
+      }
+    }
+  }
+
+
+}
